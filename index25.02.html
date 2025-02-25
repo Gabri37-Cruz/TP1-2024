@@ -8,16 +8,21 @@
 </head>
 <body>
     <fieldset>
-        <legend>Cadastro</legend>
-        <label for="nome" id="nome">Nome:</label>
-        <input type="text">
-        <label for="email" id="email">Email:</label>
-        <input type="text">
-        <label for="telefone" id="telefone">Telefone:</label>
-        <input type="text">
-        <br>
-        <button>Cadastrar</button>
-        <button>Imprimir</button>
+        <form action="" id="form-cadastro">
+            <legend>Cadastro</legend>
+            <label for="nome" id="nome">Nome:</label>
+            <input type="text">
+            <label for="email" id="email">Email:</label>
+            <input type="text">
+            <label for="telefone" id="telefone">Telefone:</label>
+            <input type="text">
+            <br>
+            <button id="botao-cadastrar">Cadastrar</button>
+            <button id="botao-imprimir">Imprimir</button>
+        </form>
+        <div>
+            <ul id="lista-cadastros"></ul>
+        </div>
     </fieldset>
     <script src="script25.02.js"></script>
 </body>
