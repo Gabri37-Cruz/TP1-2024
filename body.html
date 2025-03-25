@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulário HTML</h1>
+        <h2>Preencha o formulário abaixo:</h2>
+
+        <form id="formulario">
+            <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Fulano de tal">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" placeholder="ex.: Pereira">
+            </div>
+            <div class="form-group">
+                <label for="nascimento">Nascimento:</label>
+                <input type="text" id="dia" placeholder="Dia">
+                <input type="text" id="mes" placeholder="Mês">
+                <input type="text" id="ano" placeholder="Ano">
+            </div>
+            <div class="form-group">
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" placeholder="ex.: 123456789">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" placeholder="ex.: 98765432101">
+            </div>
+            </fieldset>
+            <fieldset>
+            <legend>Dados de endereço</legend>
+            <div class="form-group">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" placeholder="Rua: Amor Cristão">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" placeholder="ex.: 07">
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" placeholder="ex: Centro">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" value="Acre" readonly>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" value="Nova Jerusalém" readonly>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" placeholder="ex: 27040014">
+            </div>
+            </fieldset>
+            <fieldset>
+            <legend>Dados de login</legend>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="ex.: jesus@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="imagem">Imagem de perfil:</label>
+                <input type="file" id="imagem" accept="image/*" style="display: none;">
+                <div id="imagemContainer">
+                    <img id="previewImagem" src="#" alt="Preview da imagem" style="display: none; max-width: 100px; max-height: 100px; margin-top: 10px;">
+                    <button type="button" id="selecionarImagem" style="margin-top: 10px;">Selecionar Imagem</button>
+                </div>
+            <div class="form-group">
+                <label for="login">Login de usuário:</label>
+                <input type="text" id="login" placeholder="ex.: gonFreecs">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="ex.: SóCr1sto$alva">
+                <label for="confirmarSenha">Confirme a senha:</label>
+                <input type="password" id="confirmarSenha" placeholder="ex.: SócrtstoSalva">
+            </div>
+            </fieldset>
+            <fieldset>
+            <legend>Complementos</legend>
+            <div class="form-group">
+                <label for="esporte">Esporte predileto:</label>
+                <input type="text" id="esporte" placeholder="Ex.: Vôlei">
+            </div>
+            <div class="form-group">
+                <label for="arquivos">Arquivos Pessoais:</label>
+                <input type="file" id="arquivos">
+            </div>
+            <div class="form-group">
+                <label>Sexo de nascimento:</label>
+                <input type="radio" id="homem" name="sexo" value="Homem">
+                <label for="homem">Homem</label>
+                <input type="radio" id="mulher" name="sexo" value="Mulher">
+                <label for="mulher">Mulher</label>
+            </div>
+            <div class="form-group">
+                <label>Recursos que tenho disponível em casa:</label>
+                <input type="checkbox" id="celular" name="recursos" value="Celular">
+                <label for="celular">Celular</label>
+                <input type="checkbox" id="tablet" name="recursos" value="Tablet">
+                <label for="tablet">Tablet</label>
+                <input type="checkbox" id="notebook" name="recursos" value="Notebook">
+                <label for="notebook">Notebook</label>
+                <input type="checkbox" id="computador" name="recursos" value="Computador de Mesa">
+                <label for="computador">Computador de Mesa</label>
+                <input type="checkbox" id="internet" name="recursos" value="Internet">
+                <label for="internet">Internet</label>
+            </div>
+            <div class="form-group">
+                <label for="corFundo">Selecione uma cor de fundo para o Formulário:</label>
+                <input type="color" id="corFundo">
+            </div>
+            <div class="form-group">
+                <label for="corFonte">Selecione uma cor de fonte para o Formulário:</label>
+                <input type="color" id="corFonte">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Digite uma mensagem:</label>
+                <textarea id="mensagem" placeholder="Jesus: 'Eu Sou o Caminho,'"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="aniversario">Aniversário:</label>
+                <input type="date" id="aniversario">
+            </div>
+            <div class="form-group">
+                <label for="dataIntervalo">Data Antes de:(2021-12-31) e após: (2000-01-01):</label>
+                <input type="date" id="dataIntervalo" min="2000-01-01" max="2021-12-31">
+            </div>
+            <div class="form-group">
+                <label for="dataHora">Exemplo de Data com hora:</label>
+                <input type="datetime-local" id="dataHora">
+            </div>
+            <div class="form-group">
+                <label for="mesAno">Mês ano:</label>
+                <input type="month" id="mesAno">
+            </div>
+            <div class="form-group">
+                <label for="semana">Retorna w01 (01 é o número da semana dentre 52):</label>
+                <input type="week" id="semana">
+            </div>
+            <div class="form-group">
+                <label for="numeroInteiro">Digite número inteiro: ex.: 3</label>
+                <input type="number" id="numeroInteiro">
+            </div>
+            <div class="form-group">
+                <label for="numeroIntervalo">Digite um número entre o intervalo de 7 e 14: ex.: 14</label>
+                <input type="number" id="numeroIntervalo" min="7" max="14">
+            </div>
+            <div class="form-group">
+                <label for="homepage">Sua homepage: ex.: https://www.facebook.com/</label>
+                <input type="url" id="homepage">
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar campos</button>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
